@@ -1,0 +1,1517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		00E356F31AD99517003FC87E /* MeetangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MeetangoTests.m */; };
+		07B5EFD5796143259FEF233F /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD2BA21363DD44E5A2E4D970 /* SF-UI-Display-Regular.otf */; };
+		0D573C59CC354A8AB6D3B3BC /* SF_Text_MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6176783AF463477F89F385D7 /* SF_Text_MediumItalic.otf */; };
+		0DC3622C27EA48AAAC4B8A9C /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D909A0053B4452C84603200 /* SF-UI-Display-Black.otf */; };
+		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		1973E6E1D63A45BAB6F63C7D /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = E32809D759CE4F11BB7B6053 /* SF-UI-Display-Thin.otf */; };
+		1C4F68BF391446EC9D8EB2C9 /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC8B85CA35DD406B81C2DC03 /* SF-UI-Text-Medium.otf */; };
+		1CF5B5AD411543B6A5257AEA /* SF_Text_HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BBAEE7D6E97423889510287 /* SF_Text_HeavyItalic.otf */; };
+		1D6AD6575BC34298B03EAD8C /* SF_Text_Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D00586068A0E4A908BAACB84 /* SF_Text_Heavy.otf */; };
+		27DFE9CCB6AC4A2A99794545 /* SF_Display_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A64687000FF546318E77FFD8 /* SF_Display_Regular.otf */; };
+		2BB03455CA4E4568ADC3142A /* SF_Text_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 549945C9AD4D440E97812517 /* SF_Text_Light.otf */; };
+		2C8B8FFE98844E0AA6FEAA4B /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4163FD2C1FD04BC9A73610A8 /* SF-UI-Text-LightItalic.otf */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */; };
+		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
+		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
+		2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */; };
+		2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */; };
+		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
+		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
+		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* MeetangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MeetangoTests.m */; };
+		33DDC19C36F747FE86D75FF1 /* SF_Display_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02BDCD236EAD47BB8D2340FE /* SF_Display_Thin.otf */; };
+		3C13FD779ABB48AB93857711 /* SF_Text_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B2140DA9D54ABD9C2009A2 /* SF_Text_Medium.otf */; };
+		4452CD38AD1D418B92D2C5EE /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9C35F014EBB494C84232C20 /* SF-UI-Display-Semibold.otf */; };
+		4C4D9B6FE6994FE48F2CDC15 /* SF_Text_BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7DF9E3B625F440284A2FFA7 /* SF_Text_BoldItalic.otf */; };
+		4FEFB913C1DF465F9C8E8777 /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7355561CE834F0EAD7D2728 /* SF-UI-Text-Heavy.otf */; };
+		5944E9424CD0437CBC5CF641 /* SF_Display_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 543F7903B4A745629A9755DC /* SF_Display_Medium.otf */; };
+		5A7DD740C7554239BA600BE0 /* SF_Display_Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CFF46E8FD47D46E3BAB36764 /* SF_Display_Semibold.otf */; };
+		5D624ABE4E8346B4AA8336DB /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDCD9DBA882340DBA41FEE79 /* SF-UI-Text-Regular.otf */; };
+		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		601605A665C34B86BD9E0A26 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BFEB8E1873FB460FB7F2A12F /* SF-UI-Text-Semibold.otf */; };
+		6DCA9A5BBB194C4EBE71B34A /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8180C71322445FA4E5FE08 /* SF-UI-Display-Bold.otf */; };
+		70DCCCBAA68B4D5FAE8D4121 /* SF_Text_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84BDEECBFD124A1993850762 /* SF_Text_Italic.otf */; };
+		7680F286EB3A44CD9C3A201A /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A711DFD5D844977B1620E4F /* SF-UI-Display-Light.otf */; };
+		7C7D59719264447595D538DE /* SF_Display_Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D24F0DC376864BC58DFB4E4D /* SF_Display_Black.otf */; };
+		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		85B80BDE3C974D02AE7B34B3 /* SF_Display_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0589B67598A34D39A63C8EB3 /* SF_Display_Bold.otf */; };
+		90A38522484242D2A20B0711 /* SF_Text_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D31C95689A94390A9255FF9 /* SF_Text_Bold.otf */; };
+		90C1FF24C784430BB8614EED /* SF-UI-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29B93B9CEAC641EEAEB6BC9F /* SF-UI-Text-Bold.otf */; };
+		962CB3B1E9694B57BE1CEFED /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 45C5164335774AA48DA5CEB1 /* SF-UI-Display-Ultralight.otf */; };
+		9D21F10C585B40078C27B949 /* SF_Text_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69E6E73660C425D8E5FE90C /* SF_Text_Regular.otf */; };
+		A2697AD160E74340BF3A040F /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD68DD9E56A043D19F2B8413 /* SF-UI-Text-Light.otf */; };
+		A346DBEF13D24B74A67AD1DF /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47BC2941782B4D7CB61B1230 /* SF-UI-Display-Heavy.otf */; };
+		A48F8340C091493CA93B681D /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECF91A3EB57847019623ECD9 /* SF-UI-Text-MediumItalic.otf */; };
+		B85E794459514FCE8F5500D0 /* SF_Display_Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7EB41E433254A6ABD7CF2FE /* SF_Display_Ultralight.otf */; };
+		BCFB5B305D854CBA921DC805 /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72A18BA92A6C45ABB868F957 /* SF-UI-Text-HeavyItalic.otf */; };
+		CFE167278FE64AC7A25994FF /* SF_Display_Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99FE0B1F8C5546F5A08A8F71 /* SF_Display_Heavy.otf */; };
+		D347AD262C37405293227F7C /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E576D6C0FC1A47758F034D57 /* SF-UI-Display-Medium.otf */; };
+		D3B12AC6C6EE4CAD8360CBD6 /* SF_Text_Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 63AC33F82D5E4AD78D2523B1 /* SF_Text_Semibold.otf */; };
+		D56D6E6F20AE40EB9798BC1C /* SF_Display_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4A2B57D25D047919702B68B /* SF_Display_Light.otf */; };
+		DF2A024F6CCF40119CA90C6C /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A0957D74A42438E414731 /* SF-UI-Text-SemiboldItalic.otf */; };
+		E06884B70C34440FBF37858B /* SF-UI-Text-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74E5E5B184EF4B5A8E98040E /* SF-UI-Text-Italic.otf */; };
+		F0FE9EFC4B514C50A0994306 /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D7B4591357A740BD9750610A /* SF-UI-Text-BoldItalic.otf */; };
+		F3540EB450944E77BA28F66F /* SF_Text_LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D9B8FD8E6E634AE2B9E93926 /* SF_Text_LightItalic.otf */; };
+		FB460DCEC96048F19DF4C74E /* SF_Text_SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 022381B069A04DA7B7A8044E /* SF_Text_SemiboldItalic.otf */; };
+		7A463A28D8124ED889E6724C /* SF_Display_Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ACC71B358B154A6FB6500506 /* SF_Display_Black.otf */; };
+		F2A211D24BFF469C82859D7E /* SF_Display_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3F10F5E04CA48A3AA40884C /* SF_Display_Bold.otf */; };
+		32B433112B644BE7BEA04E3A /* SF_Display_Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = ACF44D2002F042C39B375692 /* SF_Display_Heavy.otf */; };
+		13FE9555289B41589FE89A90 /* SF_Display_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F68207EF4EDC419580F57410 /* SF_Display_Light.otf */; };
+		F212E5EFBE8241ABB000BFAD /* SF_Display_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A79A124366EE49E2AD7071DE /* SF_Display_Medium.otf */; };
+		13C9500133C04AAAACD48012 /* SF_Display_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC376D421BF84D04A053A5B6 /* SF_Display_Regular.otf */; };
+		5D12945A57B9427FA17F707E /* SF_Display_Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5335B38F9E944789630DC51 /* SF_Display_Semibold.otf */; };
+		AC49D64D74824850B6FCAF90 /* SF_Display_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36DE9D3D22A14020B754ED7B /* SF_Display_Thin.otf */; };
+		8A9CC12575E44931ADC98580 /* SF_Display_Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9192CF0C35FD4FD1B233D52A /* SF_Display_Ultralight.otf */; };
+		7FA8F6A168A14BB59B37518F /* SF_Text_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55545B550DC14F0993F83F24 /* SF_Text_Bold.otf */; };
+		4710D18AE64C40FC8078F7EC /* SF_Text_BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9D0904C0FBC46FCBA496E05 /* SF_Text_BoldItalic.otf */; };
+		D8A73B491C2743B188F0715F /* SF_Text_Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E623E44364394E21B96AAF00 /* SF_Text_Heavy.otf */; };
+		08FA2A1E021844519DDDFE2B /* SF_Text_HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 234276E12BB94BA98BCE4353 /* SF_Text_HeavyItalic.otf */; };
+		5255AD62015949CCBADDE56A /* SF_Text_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32E9E2B675D641C480DB7C72 /* SF_Text_Italic.otf */; };
+		738AF2ADB48C4E2A91B35364 /* SF_Text_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A370938A5F8F40D3A407661B /* SF_Text_Light.otf */; };
+		0C9464C79DEA4B2F8AE5B558 /* SF_Text_LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78F86945382B4872BFBEC41E /* SF_Text_LightItalic.otf */; };
+		5D7EA6FE6E0344E993E3E53F /* SF_Text_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E3F4CABAAF43159FB11FEC /* SF_Text_Medium.otf */; };
+		DA0325BFC2A94BF6B3B3DC4E /* SF_Text_MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E51D4C3EA37C45318BA4A424 /* SF_Text_MediumItalic.otf */; };
+		2053ACB4AC50447192B7EDCE /* SF_Text_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21CE4992DDA045289FDA0EE3 /* SF_Text_Regular.otf */; };
+		88BC6A0AC3154A4280777A28 /* SF_Text_Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29BE754EA0BB4BC9B0F41D82 /* SF_Text_Semibold.otf */; };
+		4BFCA9531F0A47FF979AB0E6 /* SF_Text_SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 48EC9C16C1CE41B2B3F4A947 /* SF_Text_SemiboldItalic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C302AB1ABCB8CE00DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTActionSheet;
+		};
+		00C302B91ABCB90400DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTGeolocation;
+		};
+		00C302BF1ABCB91800DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		00C302DB1ABCB9D200DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B511DB1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
+			remoteInfo = RCTVibration;
+		};
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = Meetango;
+		};
+		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTSettings;
+		};
+		139FDEF31B06529B00C62182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		146834031AC3E56700842450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "Meetango-tvOS";
+		};
+		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
+		3DAD3E871DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
+			remoteInfo = "RCTLinking-tvOS";
+		};
+		3DAD3E8B1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		3DAD3E8F1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
+			remoteInfo = "RCTSettings-tvOS";
+		};
+		3DAD3E931DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		3DAD3E981DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		3DAD3EA21DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		3DAD3EA41DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		3DAD3EA61DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		3DAD3EA81DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTAnimation;
+		};
+		5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
+			remoteInfo = "RCTAnimation-tvOS";
+		};
+		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTLinking;
+		};
+		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* MeetangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MeetangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetangoTests.m; sourceTree = "<group>"; };
+		022381B069A04DA7B7A8044E /* SF_Text_SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_SemiboldItalic.otf; path = ../assets/fonts/SF_Text_SemiboldItalic.otf; sourceTree = "<group>"; };
+		02BDCD236EAD47BB8D2340FE /* SF_Display_Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Thin.otf; path = ../assets/fonts/SF_Display_Thin.otf; sourceTree = "<group>"; };
+		0589B67598A34D39A63C8EB3 /* SF_Display_Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Bold.otf; path = ../assets/fonts/SF_Display_Bold.otf; sourceTree = "<group>"; };
+		0BBAEE7D6E97423889510287 /* SF_Text_HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_HeavyItalic.otf; path = ../assets/fonts/SF_Text_HeavyItalic.otf; sourceTree = "<group>"; };
+		10B2140DA9D54ABD9C2009A2 /* SF_Text_Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Medium.otf; path = ../assets/fonts/SF_Text_Medium.otf; sourceTree = "<group>"; };
+		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
+		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Meetango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetango.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Meetango/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Meetango/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Meetango/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Meetango/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Meetango/main.m; sourceTree = "<group>"; };
+		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1F8180C71322445FA4E5FE08 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Bold.otf"; path = "../assets/fonts/SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		29B93B9CEAC641EEAEB6BC9F /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Bold.otf"; path = "../assets/fonts/SF-UI-Text-Bold.otf"; sourceTree = "<group>"; };
+		2A711DFD5D844977B1620E4F /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Light.otf"; path = "../assets/fonts/SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Meetango-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meetango-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Meetango-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meetango-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4163FD2C1FD04BC9A73610A8 /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-LightItalic.otf"; path = "../assets/fonts/SF-UI-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		45C5164335774AA48DA5CEB1 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Ultralight.otf"; path = "../assets/fonts/SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		47BC2941782B4D7CB61B1230 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Heavy.otf"; path = "../assets/fonts/SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		543F7903B4A745629A9755DC /* SF_Display_Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Medium.otf; path = ../assets/fonts/SF_Display_Medium.otf; sourceTree = "<group>"; };
+		549945C9AD4D440E97812517 /* SF_Text_Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Light.otf; path = ../assets/fonts/SF_Text_Light.otf; sourceTree = "<group>"; };
+		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6176783AF463477F89F385D7 /* SF_Text_MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_MediumItalic.otf; path = ../assets/fonts/SF_Text_MediumItalic.otf; sourceTree = "<group>"; };
+		63AC33F82D5E4AD78D2523B1 /* SF_Text_Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Semibold.otf; path = ../assets/fonts/SF_Text_Semibold.otf; sourceTree = "<group>"; };
+		6D909A0053B4452C84603200 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Black.otf"; path = "../assets/fonts/SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		72A18BA92A6C45ABB868F957 /* SF-UI-Text-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-HeavyItalic.otf"; path = "../assets/fonts/SF-UI-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		74E5E5B184EF4B5A8E98040E /* SF-UI-Text-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Italic.otf"; path = "../assets/fonts/SF-UI-Text-Italic.otf"; sourceTree = "<group>"; };
+		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7D31C95689A94390A9255FF9 /* SF_Text_Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Bold.otf; path = ../assets/fonts/SF_Text_Bold.otf; sourceTree = "<group>"; };
+		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		84BDEECBFD124A1993850762 /* SF_Text_Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Italic.otf; path = ../assets/fonts/SF_Text_Italic.otf; sourceTree = "<group>"; };
+		99FE0B1F8C5546F5A08A8F71 /* SF_Display_Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Heavy.otf; path = ../assets/fonts/SF_Display_Heavy.otf; sourceTree = "<group>"; };
+		9D5A0957D74A42438E414731 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-SemiboldItalic.otf"; path = "../assets/fonts/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		A64687000FF546318E77FFD8 /* SF_Display_Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Regular.otf; path = ../assets/fonts/SF_Display_Regular.otf; sourceTree = "<group>"; };
+		AD2BA21363DD44E5A2E4D970 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Regular.otf"; path = "../assets/fonts/SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		B7DF9E3B625F440284A2FFA7 /* SF_Text_BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_BoldItalic.otf; path = ../assets/fonts/SF_Text_BoldItalic.otf; sourceTree = "<group>"; };
+		B7EB41E433254A6ABD7CF2FE /* SF_Display_Ultralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Ultralight.otf; path = ../assets/fonts/SF_Display_Ultralight.otf; sourceTree = "<group>"; };
+		BFEB8E1873FB460FB7F2A12F /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Semibold.otf"; path = "../assets/fonts/SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
+		C9C35F014EBB494C84232C20 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Semibold.otf"; path = "../assets/fonts/SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		CFF46E8FD47D46E3BAB36764 /* SF_Display_Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Semibold.otf; path = ../assets/fonts/SF_Display_Semibold.otf; sourceTree = "<group>"; };
+		D00586068A0E4A908BAACB84 /* SF_Text_Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Heavy.otf; path = ../assets/fonts/SF_Text_Heavy.otf; sourceTree = "<group>"; };
+		D24F0DC376864BC58DFB4E4D /* SF_Display_Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Black.otf; path = ../assets/fonts/SF_Display_Black.otf; sourceTree = "<group>"; };
+		D4A2B57D25D047919702B68B /* SF_Display_Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Display_Light.otf; path = ../assets/fonts/SF_Display_Light.otf; sourceTree = "<group>"; };
+		D7B4591357A740BD9750610A /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-BoldItalic.otf"; path = "../assets/fonts/SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		D9B8FD8E6E634AE2B9E93926 /* SF_Text_LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_LightItalic.otf; path = ../assets/fonts/SF_Text_LightItalic.otf; sourceTree = "<group>"; };
+		DD68DD9E56A043D19F2B8413 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Light.otf"; path = "../assets/fonts/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
+		DDCD9DBA882340DBA41FEE79 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Regular.otf"; path = "../assets/fonts/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		E32809D759CE4F11BB7B6053 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Thin.otf"; path = "../assets/fonts/SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		E576D6C0FC1A47758F034D57 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Medium.otf"; path = "../assets/fonts/SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		E7355561CE834F0EAD7D2728 /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Heavy.otf"; path = "../assets/fonts/SF-UI-Text-Heavy.otf"; sourceTree = "<group>"; };
+		EC8B85CA35DD406B81C2DC03 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Medium.otf"; path = "../assets/fonts/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		ECF91A3EB57847019623ECD9 /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-MediumItalic.otf"; path = "../assets/fonts/SF-UI-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		F69E6E73660C425D8E5FE90C /* SF_Text_Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SF_Text_Regular.otf; path = ../assets/fonts/SF_Text_Regular.otf; sourceTree = "<group>"; };
+		ACC71B358B154A6FB6500506 /* SF_Display_Black.otf */ = {isa = PBXFileReference; name = "SF_Display_Black.otf"; path = "../assets/font/SF_Display_Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D3F10F5E04CA48A3AA40884C /* SF_Display_Bold.otf */ = {isa = PBXFileReference; name = "SF_Display_Bold.otf"; path = "../assets/font/SF_Display_Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ACF44D2002F042C39B375692 /* SF_Display_Heavy.otf */ = {isa = PBXFileReference; name = "SF_Display_Heavy.otf"; path = "../assets/font/SF_Display_Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F68207EF4EDC419580F57410 /* SF_Display_Light.otf */ = {isa = PBXFileReference; name = "SF_Display_Light.otf"; path = "../assets/font/SF_Display_Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A79A124366EE49E2AD7071DE /* SF_Display_Medium.otf */ = {isa = PBXFileReference; name = "SF_Display_Medium.otf"; path = "../assets/font/SF_Display_Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC376D421BF84D04A053A5B6 /* SF_Display_Regular.otf */ = {isa = PBXFileReference; name = "SF_Display_Regular.otf"; path = "../assets/font/SF_Display_Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5335B38F9E944789630DC51 /* SF_Display_Semibold.otf */ = {isa = PBXFileReference; name = "SF_Display_Semibold.otf"; path = "../assets/font/SF_Display_Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		36DE9D3D22A14020B754ED7B /* SF_Display_Thin.otf */ = {isa = PBXFileReference; name = "SF_Display_Thin.otf"; path = "../assets/font/SF_Display_Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9192CF0C35FD4FD1B233D52A /* SF_Display_Ultralight.otf */ = {isa = PBXFileReference; name = "SF_Display_Ultralight.otf"; path = "../assets/font/SF_Display_Ultralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		55545B550DC14F0993F83F24 /* SF_Text_Bold.otf */ = {isa = PBXFileReference; name = "SF_Text_Bold.otf"; path = "../assets/font/SF_Text_Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C9D0904C0FBC46FCBA496E05 /* SF_Text_BoldItalic.otf */ = {isa = PBXFileReference; name = "SF_Text_BoldItalic.otf"; path = "../assets/font/SF_Text_BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E623E44364394E21B96AAF00 /* SF_Text_Heavy.otf */ = {isa = PBXFileReference; name = "SF_Text_Heavy.otf"; path = "../assets/font/SF_Text_Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		234276E12BB94BA98BCE4353 /* SF_Text_HeavyItalic.otf */ = {isa = PBXFileReference; name = "SF_Text_HeavyItalic.otf"; path = "../assets/font/SF_Text_HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		32E9E2B675D641C480DB7C72 /* SF_Text_Italic.otf */ = {isa = PBXFileReference; name = "SF_Text_Italic.otf"; path = "../assets/font/SF_Text_Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A370938A5F8F40D3A407661B /* SF_Text_Light.otf */ = {isa = PBXFileReference; name = "SF_Text_Light.otf"; path = "../assets/font/SF_Text_Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78F86945382B4872BFBEC41E /* SF_Text_LightItalic.otf */ = {isa = PBXFileReference; name = "SF_Text_LightItalic.otf"; path = "../assets/font/SF_Text_LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		62E3F4CABAAF43159FB11FEC /* SF_Text_Medium.otf */ = {isa = PBXFileReference; name = "SF_Text_Medium.otf"; path = "../assets/font/SF_Text_Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E51D4C3EA37C45318BA4A424 /* SF_Text_MediumItalic.otf */ = {isa = PBXFileReference; name = "SF_Text_MediumItalic.otf"; path = "../assets/font/SF_Text_MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21CE4992DDA045289FDA0EE3 /* SF_Text_Regular.otf */ = {isa = PBXFileReference; name = "SF_Text_Regular.otf"; path = "../assets/font/SF_Text_Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		29BE754EA0BB4BC9B0F41D82 /* SF_Text_Semibold.otf */ = {isa = PBXFileReference; name = "SF_Text_Semibold.otf"; path = "../assets/font/SF_Text_Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		48EC9C16C1CE41B2B3F4A947 /* SF_Text_SemiboldItalic.otf */ = {isa = PBXFileReference; name = "SF_Text_SemiboldItalic.otf"; path = "../assets/font/SF_Text_SemiboldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
+				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
+				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
+				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
+				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
+				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
+				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */,
+				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */,
+				2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */,
+				2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */,
+				2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */,
+				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
+				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
+				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C302A81ABCB8CE00DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302B61ABCB90400DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302BC1ABCB91800DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
+				3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302D41ABCB9D200DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
+				3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302E01ABCB9EE00DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E356EF1AD99517003FC87E /* MeetangoTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* MeetangoTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = MeetangoTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		139105B71AF99BAD00B5F7CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
+				3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		139FDEE71B06529A00C62182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
+				3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* Meetango */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = Meetango;
+			sourceTree = "<group>";
+		};
+		146834001AC3E56700842450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				146834041AC3E56700842450 /* libReact.a */,
+				3DAD3EA31DF850E9000B6D8A /* libReact.a */,
+				3DAD3EA51DF850E9000B6D8A /* libyoga.a */,
+				3DAD3EA71DF850E9000B6D8A /* libyoga.a */,
+				3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */,
+				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
+				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
+				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */,
+				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C398B11ACF4ADC00677621 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
+				3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
+				146833FF1AC3E56700842450 /* React.xcodeproj */,
+				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
+				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
+				00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */,
+				78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */,
+				00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */,
+				139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */,
+				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
+				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
+				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		832341B11AAA6A8300B99B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832341B51AAA6A8300B99B32 /* libRCTText.a */,
+				3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* Meetango */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* MeetangoTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				D3339F10E500436AB2D39DE0 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* Meetango.app */,
+				00E356EE1AD99517003FC87E /* MeetangoTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Meetango-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Meetango-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3339F10E500436AB2D39DE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D909A0053B4452C84603200 /* SF-UI-Display-Black.otf */,
+				1F8180C71322445FA4E5FE08 /* SF-UI-Display-Bold.otf */,
+				47BC2941782B4D7CB61B1230 /* SF-UI-Display-Heavy.otf */,
+				2A711DFD5D844977B1620E4F /* SF-UI-Display-Light.otf */,
+				E576D6C0FC1A47758F034D57 /* SF-UI-Display-Medium.otf */,
+				AD2BA21363DD44E5A2E4D970 /* SF-UI-Display-Regular.otf */,
+				C9C35F014EBB494C84232C20 /* SF-UI-Display-Semibold.otf */,
+				E32809D759CE4F11BB7B6053 /* SF-UI-Display-Thin.otf */,
+				45C5164335774AA48DA5CEB1 /* SF-UI-Display-Ultralight.otf */,
+				29B93B9CEAC641EEAEB6BC9F /* SF-UI-Text-Bold.otf */,
+				D7B4591357A740BD9750610A /* SF-UI-Text-BoldItalic.otf */,
+				E7355561CE834F0EAD7D2728 /* SF-UI-Text-Heavy.otf */,
+				72A18BA92A6C45ABB868F957 /* SF-UI-Text-HeavyItalic.otf */,
+				74E5E5B184EF4B5A8E98040E /* SF-UI-Text-Italic.otf */,
+				DD68DD9E56A043D19F2B8413 /* SF-UI-Text-Light.otf */,
+				4163FD2C1FD04BC9A73610A8 /* SF-UI-Text-LightItalic.otf */,
+				EC8B85CA35DD406B81C2DC03 /* SF-UI-Text-Medium.otf */,
+				ECF91A3EB57847019623ECD9 /* SF-UI-Text-MediumItalic.otf */,
+				DDCD9DBA882340DBA41FEE79 /* SF-UI-Text-Regular.otf */,
+				BFEB8E1873FB460FB7F2A12F /* SF-UI-Text-Semibold.otf */,
+				9D5A0957D74A42438E414731 /* SF-UI-Text-SemiboldItalic.otf */,
+				D24F0DC376864BC58DFB4E4D /* SF_Display_Black.otf */,
+				0589B67598A34D39A63C8EB3 /* SF_Display_Bold.otf */,
+				99FE0B1F8C5546F5A08A8F71 /* SF_Display_Heavy.otf */,
+				D4A2B57D25D047919702B68B /* SF_Display_Light.otf */,
+				543F7903B4A745629A9755DC /* SF_Display_Medium.otf */,
+				A64687000FF546318E77FFD8 /* SF_Display_Regular.otf */,
+				CFF46E8FD47D46E3BAB36764 /* SF_Display_Semibold.otf */,
+				02BDCD236EAD47BB8D2340FE /* SF_Display_Thin.otf */,
+				B7EB41E433254A6ABD7CF2FE /* SF_Display_Ultralight.otf */,
+				7D31C95689A94390A9255FF9 /* SF_Text_Bold.otf */,
+				B7DF9E3B625F440284A2FFA7 /* SF_Text_BoldItalic.otf */,
+				D00586068A0E4A908BAACB84 /* SF_Text_Heavy.otf */,
+				0BBAEE7D6E97423889510287 /* SF_Text_HeavyItalic.otf */,
+				84BDEECBFD124A1993850762 /* SF_Text_Italic.otf */,
+				549945C9AD4D440E97812517 /* SF_Text_Light.otf */,
+				D9B8FD8E6E634AE2B9E93926 /* SF_Text_LightItalic.otf */,
+				10B2140DA9D54ABD9C2009A2 /* SF_Text_Medium.otf */,
+				6176783AF463477F89F385D7 /* SF_Text_MediumItalic.otf */,
+				F69E6E73660C425D8E5FE90C /* SF_Text_Regular.otf */,
+				63AC33F82D5E4AD78D2523B1 /* SF_Text_Semibold.otf */,
+				022381B069A04DA7B7A8044E /* SF_Text_SemiboldItalic.otf */,
+				ACC71B358B154A6FB6500506 /* SF_Display_Black.otf */,
+				D3F10F5E04CA48A3AA40884C /* SF_Display_Bold.otf */,
+				ACF44D2002F042C39B375692 /* SF_Display_Heavy.otf */,
+				F68207EF4EDC419580F57410 /* SF_Display_Light.otf */,
+				A79A124366EE49E2AD7071DE /* SF_Display_Medium.otf */,
+				AC376D421BF84D04A053A5B6 /* SF_Display_Regular.otf */,
+				A5335B38F9E944789630DC51 /* SF_Display_Semibold.otf */,
+				36DE9D3D22A14020B754ED7B /* SF_Display_Thin.otf */,
+				9192CF0C35FD4FD1B233D52A /* SF_Display_Ultralight.otf */,
+				55545B550DC14F0993F83F24 /* SF_Text_Bold.otf */,
+				C9D0904C0FBC46FCBA496E05 /* SF_Text_BoldItalic.otf */,
+				E623E44364394E21B96AAF00 /* SF_Text_Heavy.otf */,
+				234276E12BB94BA98BCE4353 /* SF_Text_HeavyItalic.otf */,
+				32E9E2B675D641C480DB7C72 /* SF_Text_Italic.otf */,
+				A370938A5F8F40D3A407661B /* SF_Text_Light.otf */,
+				78F86945382B4872BFBEC41E /* SF_Text_LightItalic.otf */,
+				62E3F4CABAAF43159FB11FEC /* SF_Text_Medium.otf */,
+				E51D4C3EA37C45318BA4A424 /* SF_Text_MediumItalic.otf */,
+				21CE4992DDA045289FDA0EE3 /* SF_Text_Regular.otf */,
+				29BE754EA0BB4BC9B0F41D82 /* SF_Text_Semibold.otf */,
+				48EC9C16C1CE41B2B3F4A947 /* SF_Text_SemiboldItalic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* MeetangoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MeetangoTests" */;
+			buildPhases = (
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = MeetangoTests;
+			productName = MeetangoTests;
+			productReference = 00E356EE1AD99517003FC87E /* MeetangoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* Meetango */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Meetango" */;
+			buildPhases = (
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meetango;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* Meetango.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* Meetango-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Meetango-tvOS" */;
+			buildPhases = (
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meetango-tvOS";
+			productName = "Meetango-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Meetango-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* Meetango-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Meetango-tvOSTests" */;
+			buildPhases = (
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "Meetango-tvOSTests";
+			productName = "Meetango-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Meetango-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 610;
+				ORGANIZATIONNAME = "Meetango .Inc";
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 7LHNF393GC;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Meetango" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
+					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 5E91572E1DD0AC6500FF2AA8 /* Products */;
+					ProjectRef = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
+					ProjectRef = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302BC1ABCB91800DB3ED1 /* Products */;
+					ProjectRef = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 78C398B11ACF4ADC00677621 /* Products */;
+					ProjectRef = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
+					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
+					ProjectRef = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+				},
+				{
+					ProductGroup = 832341B11AAA6A8300B99B32 /* Products */;
+					ProjectRef = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
+					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+				},
+				{
+					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
+					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 146834001AC3E56700842450 /* Products */;
+					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* Meetango */,
+				00E356ED1AD99517003FC87E /* MeetangoTests */,
+				2D02E47A1E0B4A5D006451C7 /* Meetango-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Meetango-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTActionSheet.a;
+			remoteRef = 00C302AB1ABCB8CE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTGeolocation.a;
+			remoteRef = 00C302B91ABCB90400DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302C01ABCB91800DB3ED1 /* libRCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTImage.a;
+			remoteRef = 00C302BF1ABCB91800DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTNetwork.a;
+			remoteRef = 00C302DB1ABCB9D200DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVibration.a;
+			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTSettings.a;
+			remoteRef = 139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139FDEF41B06529B00C62182 /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = 139FDEF31B06529B00C62182 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		146834041AC3E56700842450 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTLinking-tvOS.a";
+			remoteRef = 3DAD3E871DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 3DAD3E8B1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTSettings-tvOS.a";
+			remoteRef = 3DAD3E8F1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 3DAD3E931DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 3DAD3E981DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA31DF850E9000B6D8A /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 3DAD3EA21DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA51DF850E9000B6D8A /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 3DAD3EA41DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA71DF850E9000B6D8A /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 3DAD3EA61DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 3DAD3EA81DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAnimation.a;
+			remoteRef = 5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTAnimation-tvOS.a";
+			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTLinking.a;
+			remoteRef = 78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				0DC3622C27EA48AAAC4B8A9C /* SF-UI-Display-Black.otf in Resources */,
+				6DCA9A5BBB194C4EBE71B34A /* SF-UI-Display-Bold.otf in Resources */,
+				A346DBEF13D24B74A67AD1DF /* SF-UI-Display-Heavy.otf in Resources */,
+				7680F286EB3A44CD9C3A201A /* SF-UI-Display-Light.otf in Resources */,
+				D347AD262C37405293227F7C /* SF-UI-Display-Medium.otf in Resources */,
+				07B5EFD5796143259FEF233F /* SF-UI-Display-Regular.otf in Resources */,
+				4452CD38AD1D418B92D2C5EE /* SF-UI-Display-Semibold.otf in Resources */,
+				1973E6E1D63A45BAB6F63C7D /* SF-UI-Display-Thin.otf in Resources */,
+				962CB3B1E9694B57BE1CEFED /* SF-UI-Display-Ultralight.otf in Resources */,
+				90C1FF24C784430BB8614EED /* SF-UI-Text-Bold.otf in Resources */,
+				F0FE9EFC4B514C50A0994306 /* SF-UI-Text-BoldItalic.otf in Resources */,
+				4FEFB913C1DF465F9C8E8777 /* SF-UI-Text-Heavy.otf in Resources */,
+				BCFB5B305D854CBA921DC805 /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				E06884B70C34440FBF37858B /* SF-UI-Text-Italic.otf in Resources */,
+				A2697AD160E74340BF3A040F /* SF-UI-Text-Light.otf in Resources */,
+				2C8B8FFE98844E0AA6FEAA4B /* SF-UI-Text-LightItalic.otf in Resources */,
+				1C4F68BF391446EC9D8EB2C9 /* SF-UI-Text-Medium.otf in Resources */,
+				A48F8340C091493CA93B681D /* SF-UI-Text-MediumItalic.otf in Resources */,
+				5D624ABE4E8346B4AA8336DB /* SF-UI-Text-Regular.otf in Resources */,
+				601605A665C34B86BD9E0A26 /* SF-UI-Text-Semibold.otf in Resources */,
+				DF2A024F6CCF40119CA90C6C /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				7C7D59719264447595D538DE /* SF_Display_Black.otf in Resources */,
+				85B80BDE3C974D02AE7B34B3 /* SF_Display_Bold.otf in Resources */,
+				CFE167278FE64AC7A25994FF /* SF_Display_Heavy.otf in Resources */,
+				D56D6E6F20AE40EB9798BC1C /* SF_Display_Light.otf in Resources */,
+				5944E9424CD0437CBC5CF641 /* SF_Display_Medium.otf in Resources */,
+				27DFE9CCB6AC4A2A99794545 /* SF_Display_Regular.otf in Resources */,
+				5A7DD740C7554239BA600BE0 /* SF_Display_Semibold.otf in Resources */,
+				33DDC19C36F747FE86D75FF1 /* SF_Display_Thin.otf in Resources */,
+				B85E794459514FCE8F5500D0 /* SF_Display_Ultralight.otf in Resources */,
+				90A38522484242D2A20B0711 /* SF_Text_Bold.otf in Resources */,
+				4C4D9B6FE6994FE48F2CDC15 /* SF_Text_BoldItalic.otf in Resources */,
+				1D6AD6575BC34298B03EAD8C /* SF_Text_Heavy.otf in Resources */,
+				1CF5B5AD411543B6A5257AEA /* SF_Text_HeavyItalic.otf in Resources */,
+				70DCCCBAA68B4D5FAE8D4121 /* SF_Text_Italic.otf in Resources */,
+				2BB03455CA4E4568ADC3142A /* SF_Text_Light.otf in Resources */,
+				F3540EB450944E77BA28F66F /* SF_Text_LightItalic.otf in Resources */,
+				3C13FD779ABB48AB93857711 /* SF_Text_Medium.otf in Resources */,
+				0D573C59CC354A8AB6D3B3BC /* SF_Text_MediumItalic.otf in Resources */,
+				9D21F10C585B40078C27B949 /* SF_Text_Regular.otf in Resources */,
+				D3B12AC6C6EE4CAD8360CBD6 /* SF_Text_Semibold.otf in Resources */,
+				FB460DCEC96048F19DF4C74E /* SF_Text_SemiboldItalic.otf in Resources */,
+				7A463A28D8124ED889E6724C /* SF_Display_Black.otf in Resources */,
+				F2A211D24BFF469C82859D7E /* SF_Display_Bold.otf in Resources */,
+				32B433112B644BE7BEA04E3A /* SF_Display_Heavy.otf in Resources */,
+				13FE9555289B41589FE89A90 /* SF_Display_Light.otf in Resources */,
+				F212E5EFBE8241ABB000BFAD /* SF_Display_Medium.otf in Resources */,
+				13C9500133C04AAAACD48012 /* SF_Display_Regular.otf in Resources */,
+				5D12945A57B9427FA17F707E /* SF_Display_Semibold.otf in Resources */,
+				AC49D64D74824850B6FCAF90 /* SF_Display_Thin.otf in Resources */,
+				8A9CC12575E44931ADC98580 /* SF_Display_Ultralight.otf in Resources */,
+				7FA8F6A168A14BB59B37518F /* SF_Text_Bold.otf in Resources */,
+				4710D18AE64C40FC8078F7EC /* SF_Text_BoldItalic.otf in Resources */,
+				D8A73B491C2743B188F0715F /* SF_Text_Heavy.otf in Resources */,
+				08FA2A1E021844519DDDFE2B /* SF_Text_HeavyItalic.otf in Resources */,
+				5255AD62015949CCBADDE56A /* SF_Text_Italic.otf in Resources */,
+				738AF2ADB48C4E2A91B35364 /* SF_Text_Light.otf in Resources */,
+				0C9464C79DEA4B2F8AE5B558 /* SF_Text_LightItalic.otf in Resources */,
+				5D7EA6FE6E0344E993E3E53F /* SF_Text_Medium.otf in Resources */,
+				DA0325BFC2A94BF6B3B3DC4E /* SF_Text_MediumItalic.otf in Resources */,
+				2053ACB4AC50447192B7EDCE /* SF_Text_Regular.otf in Resources */,
+				88BC6A0AC3154A4280777A28 /* SF_Text_Semibold.otf in Resources */,
+				4BFCA9531F0A47FF979AB0E6 /* SF_Text_SemiboldItalic.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* MeetangoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* MeetangoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* Meetango */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* Meetango-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = Meetango;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MeetangoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetango.app/Meetango";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = MeetangoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetango.app/Meetango";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 7LHNF393GC;
+				INFOPLIST_FILE = Meetango/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meetango;
+				PRODUCT_NAME = Meetango;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7LHNF393GC;
+				INFOPLIST_FILE = Meetango/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meetango;
+				PRODUCT_NAME = Meetango;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Meetango-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Meetango-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Meetango-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Meetango-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Meetango-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Meetango-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetango-tvOS.app/Meetango-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Meetango-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Meetango-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetango-tvOS.app/Meetango-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MeetangoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Meetango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Meetango-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Meetango-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Meetango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
