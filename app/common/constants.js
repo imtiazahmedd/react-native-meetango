@@ -20,5 +20,7 @@ exports.FLASHSCREEN_ROUTE_ID = 0;
 exports.LOGIN_ROUTE_ID = 1;
 exports.SHOW_PROFILE_ROUTE_ID = 2;
 exports.HOME_ROUTE_ID = 3;
+exports.CHAT_MAIN_ROUTE_ID = 4;
+exports.CHAT_PERSON_ROUTE_ID = 5;
 
 exports.TIMER_FLASHSCREEN = 200;

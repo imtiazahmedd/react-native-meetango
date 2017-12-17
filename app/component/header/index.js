@@ -33,7 +33,7 @@ class Header extends Component
     return(
         <View style={{height: 50, width: Global.Constants.WIDTH_SCREEN, flexDirection: 'row', justifyContent: 'space-between', marginLeft: 15}}>
             <TouchableOpacity onPress={this.props.onHome} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
-              <Image source={require('../../images/ic_home.png')} resizeMode={'contain'} style={{width: 30, height: 30}}/>
+              <Image source={this.props.availableIndex == 1 ? require('../../images/ic_home_active.png') : require('../../images/ic_home.png')} resizeMode={'contain'} style={{width: 30, height: 30}}/>
             </TouchableOpacity>
             <TouchableOpacity onPress={this.props.onMatch} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
               <Image source={require('../../images/ic_match_page.png')} resizeMode={'contain'} style={{width: 40, height: 40}}/>

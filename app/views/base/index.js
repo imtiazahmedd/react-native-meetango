@@ -32,7 +32,7 @@ class MainView extends Component {
     super(props);
 
     this.state = {
-
+      availableIndex: 0
     }
   }
 
@@ -40,48 +40,80 @@ class MainView extends Component {
 
   }
 
-  render() {
-      return (
-        <View ref='mainView' style={{ height: Global.Constants.HEIGHT_SCREEN, width: Global.Constants.WIDTH_SCREEN, marginTop: Platform.OS == 'ios' ? 20 : 0}}>
-          <Header
+  renderHeader(){
+    return(
+        <Header
             isHide={this.state.isHideHeader}
             onHome={this.onHome.bind(this)}
             onMatch={this.onMatch.bind(this)}
+            availableIndex={this.state.availableIndex}
             onChat={this.onChat.bind(this)}/>
-          <View style={{height: Platform.OS == 'ios' ? Global.Constants.HEIGHT_SCREEN - 120 : Global.Constants.HEIGHT_SCREEN - 100}}>
-            <ScrollView
-              ref='_scrollview'
-              showsVerticalScrollIndicator={false}
-              scrollEnabled={!this.state.scrollEnabled}
-              onScroll={this.onScrollView.bind(this)}>
-              <TouchableOpacity activeOpacity={1} onPress={this.onCloseModalDropdown.bind(this)} style={[this.state.isDropdown && {width: Global.Constants.WIDTH_SCREEN, height: Global.Constants.HEIGHT_SCREEN - 103}]}>
-                <View onLayout={() => { }} style={{flex: 1}}>
-                  {this.renderContent()}
-                </View>
-              </TouchableOpacity>
-            </ScrollView>
-          </View>
-          <Footer
-            isHide={this.state.isHideFooter}
+    );
+  }
+
+  renderFooter(){
+    return(
+        <Footer
+            isHide={false}
             onEvent={this.onEvent.bind(this)}
             onVenue={this.onVenue.bind(this)}
             onProfile={this.onProfile.bind(this)}
-          />
-          {this.state.isModal && <View ref="modalContent" style={{ position: 'absolute', right: 0, left: 0, bottom: 0, top: 0, justifyContent: 'center', alignItems: 'center', backgroundColor: this.state.backgroundColorModal !== undefined ? this.state.backgroundColorModal : 'rgba(0, 0, 0, 0.2)', width: this.state.widthGlobal, height: this.state.heightGlobal }} onLayout={() => { }}>
-            {this.renderModal()}
-          </View>}
-          {this.state.isDropdown && <View ref="dropdownContent" style={{ position: 'absolute', marginTop: this.state.dropdownTop, marginLeft: this.state.dropdownLeft, marginRight: this.state.dropdownRight, width: this.state.dropdownWidth !== undefined && this.state.dropdownWidth > 0 ? this.state.dropdownWidth : Global.Constants.WIDTH_SCREEN }} onLayout={() => { }}>
-            {this.renderDropdown()}
-          </View>}
+            availableIndex={this.state.availableIndex}
+        />
+    );
+  }
+
+  render() {
+      var heightContent = '';
+      if(this.state.isHideHeader && this.state.isHideFooter){
+        heightContent = Global.Constants.HEIGHT_SCREEN - 103;
+      } else {
+        if(this.state.isHideHeader || this.state.isHideFooter){
+          heightContent = Global.Constants.HEIGHT_SCREEN - 53;
+        } else {
+          heightContent = Global.Constants.HEIGHT_SCREEN;
+        }
+      }
+      return (
+        <View ref='mainView' style={{ height: Global.Constants.HEIGHT_SCREEN, width: Global.Constants.WIDTH_SCREEN, marginTop: Platform.OS == 'ios' ? 20 : 0}}>
+            {this.renderHeader()}
+            <View style={{height: Platform.OS == 'ios' ? heightContent - 18 : heightContent}}>
+              <ScrollView
+                ref='_scrollview'
+                showsVerticalScrollIndicator={false}
+                scrollEnabled={!this.state.scrollDisable}
+                onScroll={this.onScrollView.bind(this)}>
+                <TouchableOpacity activeOpacity={1} onPress={this.onCloseModalDropdown.bind(this)} style={[this.state.isDropdown && {width: Global.Constants.WIDTH_SCREEN, height: heightContent}]}>
+                  <View onLayout={() => { }} style={{flex: 1}}>
+                    {this.renderContent()}
+                  </View>
+                </TouchableOpacity>
+              </ScrollView>
+            </View>
+            {this.renderFooter()}
+            {this.state.isModal && <View ref="modalContent" style={{ position: 'absolute', right: 0, left: 0, bottom: 0, top: 0, justifyContent: 'center', alignItems: 'center', backgroundColor: this.state.backgroundColorModal !== undefined ? this.state.backgroundColorModal : 'rgba(0, 0, 0, 0.2)', width: this.state.widthGlobal, height: this.state.heightGlobal }} onLayout={() => { }}>
+              {this.renderModal()}
+            </View>}
+            {this.state.isDropdown && <View ref="dropdownContent" style={{ position: 'absolute', marginTop: this.state.dropdownTop, marginLeft: this.state.dropdownLeft, marginRight: this.state.dropdownRight, width: this.state.dropdownWidth !== undefined && this.state.dropdownWidth > 0 ? this.state.dropdownWidth : Global.Constants.WIDTH_SCREEN }} onLayout={() => { }}>
+              {this.renderDropdown()}
+            </View>}
         </View>
       );
   }
 
   onScrollView(){}
   renderContent(){}
-  onHome(){}
+  onHome(){
+    this.props.navigator.replace({
+      id: Global.Constants.HOME_ROUTE_ID
+    });
+  }
   onMatch(){}
-  onChat(){}
+  onChat(){
+    this.props.navigator.replace({
+      id: Global.Constants.CHAT_MAIN_ROUTE_ID
+    });
+  }
   onEvent(){}
   onVenue(){}
   onProfile(){}

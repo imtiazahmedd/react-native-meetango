@@ -13,6 +13,7 @@ import {
   Image,
   Text,
   Navigator,
+  TouchableOpacity,
   Animated
 }from 'react-native';
 
@@ -27,155 +28,197 @@ class HomeScreen extends Base
   constructor(props){
     super(props);
     this.state = {
-      cards: ['1', '2', '3'],
+      cards: ['1', '2', '3', '4', '5', '6'],
       swipedAllCards: false,
       swipeDirection: '',
       isSwipingBack: false,
-      cardIndex: 0
+      cardIndex: 0,
+      scrollDisable: true,
+      availableIndex: 1
     }
   }
 
   renderContent(){
     return(
-      <View style={{width: Global.Constants.WIDTH_SCREEN, backgroundColor: 'green'}}>
-      <Swiper
-      ref={swiper => {
-        this.swiper = swiper
-      }}
-      onSwiped={this.onSwiped}
-      onTapCard={this.jumpTo}
-      cards={this.state.cards}
-      cardIndex={this.state.cardIndex}
-      cardVerticalMargin={80}
-      renderCard={this.renderCard}
-      onSwipedAll={this.onSwipedAllCards}
-      overlayLabels={{
-        bottom: {
-          title: 'BLEAH',
-          style: {
-            label: {
-              backgroundColor: 'black',
-              borderColor: 'black',
-              color: 'white',
-              borderWidth: 1
+      <View style={{width: Global.Constants.WIDTH_SCREEN}}>
+        <Swiper
+          ref={swiper => {
+            this.swiper = swiper
+          }}
+          onSwiped={this.onSwiped}
+          onTapCard={this.jumpTo}
+          cards={this.state.cards}
+          cardIndex={this.state.cardIndex}
+          cardVerticalMargin={20}
+          cardHorizontalMargin={5}
+          renderCard={this.renderCard}
+          onSwipedAll={this.onSwipedAllCards}
+          overlayLabels={{
+            bottom: {
+              title: 'NOPE',
+              style: {
+                label: {
+                  backgroundColor: 'transparent',
+                  borderColor: '#F01212',
+                  color: '#F01212',
+                  borderWidth: 5
+                },
+                wrapper: {
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }
+              }
             },
-            wrapper: {
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }
-          }
-        },
-        left: {
-          title: 'NOPE',
-          style: {
-            label: {
-              backgroundColor: 'black',
-              borderColor: 'black',
-              color: 'white',
-              borderWidth: 1
+            left: {
+              title: 'NOPE',
+              style: {
+                label: {
+                  backgroundColor: 'transparent',
+                  borderColor: '#F01212',
+                  color: '#F01212',
+                  borderWidth: 5
+                },
+                wrapper: {
+                  flexDirection: 'column',
+                  alignItems: 'flex-end',
+                  justifyContent: 'flex-start',
+                  marginTop: 30,
+                  marginLeft: -30
+                }
+              }
             },
-            wrapper: {
-              flexDirection: 'column',
-              alignItems: 'flex-end',
-              justifyContent: 'flex-start',
-              marginTop: 30,
-              marginLeft: -30
-            }
-          }
-        },
-        right: {
-          title: 'LIKE',
-          style: {
-            label: {
-              backgroundColor: 'black',
-              borderColor: 'black',
-              color: 'white',
-              borderWidth: 1
+            right: {
+              title: 'LIKE',
+              style: {
+                label: {
+                  backgroundColor: 'transparent',
+                  borderColor: '#32BF7E',
+                  color: '#32BF7E',
+                  borderWidth: 5
+                },
+                wrapper: {
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  marginTop: 30,
+                  marginLeft: 30
+                }
+              }
             },
-            wrapper: {
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              justifyContent: 'flex-start',
-              marginTop: 30,
-              marginLeft: 30
+            top: {
+              title: 'LIKE',
+              style: {
+                label: {
+                  backgroundColor: 'transparent',
+                  borderColor: '#32BF7E',
+                  color: '#32BF7E',
+                  borderWidth: 5
+                },
+                wrapper: {
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }
+              }
             }
-          }
-        },
-        top: {
-          title: 'SUPER LIKE',
-          style: {
-            label: {
-              backgroundColor: 'black',
-              borderColor: 'black',
-              color: 'white',
-              borderWidth: 1
-            },
-            wrapper: {
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }
-          }
-        }
-      }}
-      animateOverlayLabelsOpacity
-      animateCardOpacity
-    >
-      <Button onPress={this.swipeBack} title='Swipe Back' />
-      <Button onPress={this.jumpTo} title='Jump to last index' />
-    </Swiper>
+          }}
+          animateOverlayLabelsOpacity
+          animateCardOpacity>
+          <View style={{marginTop: Global.Constants.HEIGHT_SCREEN - 220}}>
+              <View style={{flexDirection: 'row', justifyContent: 'center', height: 30, width: Global.Constants.WIDTH_SCREEN - 80, alignSelf: 'center', backgroundColor: 'white'}}>
+                <View style={{flexDirection: 'row', justifyContent: 'flex-end', marginRight: 10, width: Global.Constants.WIDTH_SCREEN/2 - 10}}>
+                     <Text style={{textAlign: 'right', fontSize: 12, paddingRight: 5, color: '#938A8A'}}>{'Around:'}</Text>
+                     <Text style={{textAlign: 'right', fontSize: 12, color: '#EB5E5E'}}>{'3km'}</Text>
+                </View>
+                <View>
+                  <Text style={{textAlign: 'center', fontSize: 12, color: '#000000'}}>{'|'}</Text>
+                </View>
+                <View style={{flexDirection: 'row', justifyContent: 'flex-start', marginLeft: 10, width: Global.Constants.WIDTH_SCREEN/2 - 10}}>
+                     <Text style={{textAlign: 'right', fontSize: 12, paddingRight: 5, color: '#938A8A'}}>{'Period:'}</Text>
+                     <Text style={{textAlign: 'right', fontSize: 12, color: '#EB5E5E'}}>{'Today'}</Text>
+                </View>
+              </View>
+              <View style={{flexDirection: 'row', justifyContent: 'space-between', width: Global.Constants.WIDTH_SCREEN - 80, alignSelf: 'center'}}>
+                  <TouchableOpacity>
+                      <Image
+                        source={require('../../images/ic_nope.png')}
+                        style={{width: 80, height: 80}}>
+                      </Image>
+                  </TouchableOpacity>
+                  <TouchableOpacity>
+                      <Image
+                        source={require('../../images/ic_filter.png')}
+                        style={{width: 80, height: 80}}>
+                      </Image>
+                  </TouchableOpacity>
+                  <TouchableOpacity>
+                      <Image
+                        source={require('../../images/ic_like.png')}
+                        style={{width: 80, height: 80}}>
+                      </Image>
+                  </TouchableOpacity>
+              </View>
+          </View>
+        </Swiper>
       </View>
     );
   }
 
-  renderCard = card => {
+  renderCard(card){
       return (
-        <View style={{
-          flex: 1,
-    borderRadius: 4,
-    borderWidth: 2,
-    borderColor: '#E8E8E8',
-    justifyContent: 'center',
-    backgroundColor: 'white'
-        }}>
-          <Text style={{
-            textAlign: 'center',
-    fontSize: 50,
-    backgroundColor: 'transparent'
-          }}>{card}</Text>
+        <View style={{height: Global.Constants.HEIGHT_SCREEN - 250, width: Global.Constants.WIDTH_SCREEN - 10, backgroundColor: 'white', borderWidth: 1, borderColor: '#95989A', borderRadius: 10}}>
+          <Image
+            source={require('../../images/img_1.png')}
+            style={{width: Global.Constants.WIDTH_SCREEN - 10}}>
+          </Image>
+          <View style={{flexDirection: 'row', width: Global.Constants.WIDTH_SCREEN - 40, height: 90}}>
+              <View style={{width: Global.Constants.WIDTH_SCREEN/4 - 10, justifyContent: 'center'}}>
+                  <Text style={{color: '#32BF7E', fontSize: 30, textAlign: 'center', fontWeight: 'bold'}}>{'25'}</Text>
+                  <Text style={{color: '#F01212', fontSize: 10, textAlign: 'center', fontWeight: 'bold'}}>{'AGO'}</Text>
+              </View>
+              <View style={{width: 3*Global.Constants.WIDTH_SCREEN/4 - 30}}>
+                <Text style={{color: '#000000', fontSize: 20, fontWeight: 'bold'}}>{'Conceptual Art: An\nIntroduction - With\nAlessandra Dias'}</Text>
+                <Text style={{color: '#918989', fontSize: 9}}>{'100 Le Dinh Ly, Ho Chi Minh City'}</Text>
+              </View>
+          </View>
+          <TouchableOpacity style={{justifyContent: 'flex-end', flexDirection: 'row', marginTop: 10}}>
+              <Image
+                source={require('../../images/ic_info.png')}
+                style={{width: 50, height: 50}}>
+              </Image>
+          </TouchableOpacity>
         </View>
       )
-    };
+  };
 
-    onSwipedAllCards = () => {
-      this.setState({
-        swipedAllCards: true
-      })
-    };
+  onSwipedAllCards(){
+    this.setState({
+      swipedAllCards: true
+    })
+  };
 
-    swipeBack = () => {
-      if (!this.state.isSwipingBack) {
-        this.setIsSwipingBack(true, () => {
-          this.swiper.swipeBack(() => {
-            this.setIsSwipingBack(false)
-          })
+  swipeBack() {
+    if (!this.state.isSwipingBack) {
+      this.setIsSwipingBack(true, () => {
+        this.swiper.swipeBack(() => {
+          this.setIsSwipingBack(false)
         })
-      }
-    };
+      })
+    }
+  };
 
-    setIsSwipingBack = (isSwipingBack, cb) => {
-      this.setState(
-        {
-          isSwipingBack: isSwipingBack
-        },
-        cb
-      )
-    };
+  setIsSwipingBack(isSwipingBack, cb){
+    this.setState({
+        isSwipingBack: isSwipingBack
+      },
+      cb
+    )
+  };
 
-    jumpTo = () => {
-      this.swiper.swipeLeft()
-    };
+  jumpTo(){
+    //this.swiper.swipeLeft()
+  };
 
   componentDidMount(){
   }

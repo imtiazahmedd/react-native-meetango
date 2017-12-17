@@ -22,6 +22,8 @@ var FlashScreen = require('./app/views/flashscreen/index');
 var LoginScreen = require('./app/views/login/index');
 var ShowProfileScreen = require('./app/views/showprofile/index');
 var HomeScreen = require('./app/views/main/index');
+var MainChatScreen = require('./app/views/main/chat/main_chat');
+var PersonChatScreen = require('./app/views/main/chat/chat_person');
 
 class RootView extends Component {
   constructor(props){
@@ -55,6 +57,10 @@ class RootView extends Component {
              return (<ShowProfileScreen navigator={navigator}/>);
         case Global.Constants.HOME_ROUTE_ID:
              return (<HomeScreen navigator={navigator}/>);
+        case Global.Constants.CHAT_MAIN_ROUTE_ID:
+             return (<MainChatScreen navigator={navigator}/>);
+        case Global.Constants.CHAT_PERSON_ROUTE_ID:
+            return (<PersonChatScreen navigator={navigator}/>);
         default:
     }
   }
