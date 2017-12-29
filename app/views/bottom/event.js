@@ -313,7 +313,7 @@ class Event extends Component {
 
     eventSettings(){
         this.props.navigator.replace({
-            id: Global.Constants.MAP_PAGE_ROUTE_ID
+            id: Global.Constants.EVENT_SETTING_ROUTE_ID
         });
     }
 }
