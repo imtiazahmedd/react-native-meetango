@@ -27,15 +27,15 @@ class HomeScreen extends Base
 {
   constructor(props){
     super(props);
-    this.state = {
-      cards: ['1', '2', '3', '4', '5', '6'],
-      swipedAllCards: false,
-      swipeDirection: '',
-      isSwipingBack: false,
-      cardIndex: 0,
-      scrollDisable: true,
-      availableIndex: 1
-    }
+        this.state = {
+            cards: ['1', '2', '3', '4', '5', '6'],
+            swipedAllCards: false,
+            swipeDirection: '',
+            isSwipingBack: false,
+            cardIndex: 0,
+            scrollDisable: true,
+            availableIndex: 1
+        }
   }
 
   renderContent(){

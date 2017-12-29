@@ -66,31 +66,33 @@ class MainView extends Component {
   render() {
       var heightContent = '';
       if(this.state.isHideHeader && this.state.isHideFooter){
-        heightContent = Global.Constants.HEIGHT_SCREEN - 103;
+        heightContent = Global.Constants.HEIGHT_SCREEN;
+      }else if(this.state.isHideHeader && this.state.anotherHead){
+          heightContent = Global.Constants.HEIGHT_SCREEN - 120;
       } else {
         if(this.state.isHideHeader || this.state.isHideFooter){
           heightContent = Global.Constants.HEIGHT_SCREEN - 53;
         } else {
-          heightContent = Global.Constants.HEIGHT_SCREEN;
+          heightContent = Global.Constants.HEIGHT_SCREEN - 103;
         }
       }
       return (
         <View ref='mainView' style={{ height: Global.Constants.HEIGHT_SCREEN, width: Global.Constants.WIDTH_SCREEN, marginTop: Platform.OS == 'ios' ? 20 : 0}}>
             {this.renderHeader()}
-            <View style={{height: Platform.OS == 'ios' ? heightContent - 18 : heightContent}}>
+            <View style={{height: Platform.OS == 'ios' ? heightContent - 20 : heightContent}}>
               <ScrollView
                 ref='_scrollview'
                 showsVerticalScrollIndicator={false}
                 scrollEnabled={!this.state.scrollDisable}
                 onScroll={this.onScrollView.bind(this)}>
-                <TouchableOpacity activeOpacity={1} onPress={this.onCloseModalDropdown.bind(this)} style={[this.state.isDropdown && {width: Global.Constants.WIDTH_SCREEN, height: heightContent}]}>
-                  <View onLayout={() => { }} style={{flex: 1}}>
+                <TouchableOpacity acstiveOpacity={1} onPress={this.onCloseModalDropdown.bind(this)} style={[this.state.isDropdown && {width: Global.Constants.WIDTH_SCREEN, height: Global.Constants.HEIGHT_SCREEN}]}>
+                  <View onLayout={() => { }} style={{}}>
                     {this.renderContent()}
                   </View>
                 </TouchableOpacity>
               </ScrollView>
             </View>
-            {this.renderFooter()}
+            {!this.state.isHideFooter && this.renderFooter()}
             {this.state.isModal && <View ref="modalContent" style={{ position: 'absolute', right: 0, left: 0, bottom: 0, top: 0, justifyContent: 'center', alignItems: 'center', backgroundColor: this.state.backgroundColorModal !== undefined ? this.state.backgroundColorModal : 'rgba(0, 0, 0, 0.2)', width: this.state.widthGlobal, height: this.state.heightGlobal }} onLayout={() => { }}>
               {this.renderModal()}
             </View>}
@@ -114,7 +116,11 @@ class MainView extends Component {
       id: Global.Constants.CHAT_MAIN_ROUTE_ID
     });
   }
-  onEvent(){}
+  onEvent(){
+      this.props.navigator.replace({
+          id: Global.Constants.EVENT_PAGE_ROUTE_ID
+      });
+  }
   onVenue(){}
   onProfile(){}
   onCloseModalDropdown(){}

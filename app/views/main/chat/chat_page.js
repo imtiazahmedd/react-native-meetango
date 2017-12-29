@@ -24,7 +24,7 @@ import Button  from '../../../component/button/index';
 import Base from '../../base/index';
 var Utils = Global.Utils;
 
-class PersonChatScreen extends Base
+class PageChatScreen extends Base
 {
   constructor(props){
     super(props);
@@ -88,4 +88,4 @@ class PersonChatScreen extends Base
       );
   }
 }
-module.exports = PersonChatScreen;
+module.exports = PageChatScreen;

@@ -125,7 +125,7 @@ class MainChatScreen extends Base
     var newMatches = this.state.newMatches;
     for(var i = 0; i < newMatches.length; i++){
       temp.push(
-        <TouchableOpacity style={{alignSelf: 'center', marginRight: 10}}>
+        <TouchableOpacity onPress={()=>{this.props.navigator.push({id: Global.Constants.CHAT_PERSON_ROUTE_ID})}} style={{alignSelf: 'center', marginRight: 10}}>
           <Image
             source={newMatches[i].avatar}
             style={{width: 80, height: 80}}>
@@ -142,7 +142,7 @@ class MainChatScreen extends Base
     var messages = this.state.messages;
     for(var i = 0; i < messages.length; i++){
       temp.push(
-        <TouchableOpacity style={{flexDirection: 'row', marginTop: 20, marginLeft: 10}}>
+        <TouchableOpacity onPress={()=>{this.props.navigator.push({id: Global.Constants.CHAT_PERSON_ROUTE_ID})}} style={{flexDirection: 'row', marginTop: 20, marginLeft: 10}}>
           <Image
             source={messages[i].avatar}
             style={{width: 80, height: 80}}>

@@ -27,7 +27,7 @@ class Header extends Component
   }
 
   render(){
-    if(this.props.isHide){
+      if(this.props.isHide){
       return(<View></View>);
     }
     return(

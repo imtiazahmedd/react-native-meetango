@@ -22,5 +22,10 @@ exports.SHOW_PROFILE_ROUTE_ID = 2;
 exports.HOME_ROUTE_ID = 3;
 exports.CHAT_MAIN_ROUTE_ID = 4;
 exports.CHAT_PERSON_ROUTE_ID = 5;
+exports.CHAT_PAGE_ROUTE_ID = 6;
+exports.MATCH_PAGE_MAIN_ROUTE_ID = 7;
+exports.EVENT_PAGE_ROUTE_ID = 8;
+exports.MAP_PAGE_ROUTE_ID = 9;
+exports.EVENT_SETTING_ROUTE_ID = 10;
 
 exports.TIMER_FLASHSCREEN = 200;
