@@ -73,7 +73,7 @@ class MainView extends Component {
         if(this.state.isHideHeader || this.state.isHideFooter){
           heightContent = Global.Constants.HEIGHT_SCREEN - 53;
         } else {
-          heightContent = Global.Constants.HEIGHT_SCREEN - 103;
+          heightContent = Global.Constants.HEIGHT_SCREEN - 120;
         }
       }
       return (

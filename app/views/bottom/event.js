@@ -95,7 +95,7 @@ class ModalList extends Component
                         <View style={{flex: 1, flexDirection: 'row'}}>
                             <View style={{width: width*0.8, height: height*0.1,marginTop: height*0.01, marginLeft: width*0.06, justifyContent: 'center', allignItem: "center"}}>
                                 <MultiSlider
-                                    values={[this.state.multiSliderValue[0]]}
+                                    values={this.state.sliderOneValue}
                                     sliderLength={280}
                                     onValuesChange={this.multiSliderValuesChange}
                                     min={0}
@@ -211,10 +211,12 @@ class Event extends Component {
                             </TouchableOpacity>
                         </View>
                     </View>
+                    <View style={{height: height*0.08, width: width, backgroundColor: "#FFFFFF", borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: "#FFFFFF"}}>
                     <View style={{flex: 1, flexDirection: 'column'}}>
-                        <View style={{marginTop: 10, height: height*0.06, width: width*0.5, marginLeft: width*0.02, backgroundColor: 'yellow'}}>
+                        <View style={{marginTop: 10, height: height*0.06, width: width*0.3, marginLeft: width*0.02, backgroundColor: 'yellow'}}>
                             <Button onPress={()=>{ this.callFunc(); }} title="Today" color="#841584" style={{flex: 1, backgroundColor: 'blue'}} />
                         </View>
+                    </View>
                     </View>
                 </View>
                 {this.renderContent()}
@@ -224,9 +226,8 @@ class Event extends Component {
     }
 
     renderContent(){
-        console.log(this.state.isModalVisible, "render contentttttttttttttt")
         return(
-            <View style={{ marginTop: height*0.08, height: height*0.7}}>
+            <View style={{ height: height*0.7}}>
                 {this.state.isModalVisible &&
                    <ModalList />}
             <ScrollView style={{ height: height*0.7}}>
@@ -545,7 +546,7 @@ class Event extends Component {
 
     eventSettings(){
         this.props.navigator.replace({
-            id: Global.Constants.EVENT_SETTING_ROUTE_ID
+            id: Global.Constants.EDIT_INFO_ROUTE_ID
 
         });
     }
@@ -554,3 +555,4 @@ class Event extends Component {
 module.exports = Event;
 //EVENT_SETTING_ROUTE_ID
 //MAP_PAGE_ROUTE_ID
+//EDIT_INFO_ROUTE_ID

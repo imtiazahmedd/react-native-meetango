@@ -28,7 +28,8 @@ var PageChatScreen = require('./app/views/main/chat/chat_page');
 var MatchPageMainScreen = require('./app/views/main/match_page/main');
 var EventPageMainScreen = require('./app/views/bottom/event');
 var MapPageScreen = require('./app/views/events/map');
-var EventSettingsPageScreen= require('./app/views/events/eventsettings');
+var EventSettingsPageScreen = require('./app/views/events/eventsettings');
+var EditInfo = require('./app/views/events/editInfo');
 
 class RootView extends Component {
   constructor(props){
@@ -76,6 +77,8 @@ class RootView extends Component {
             return (<MapPageScreen navigator={navigator}/>);
         case Global.Constants.EVENT_SETTING_ROUTE_ID:
             return (<EventSettingsPageScreen navigator={navigator}/>);
+        case Global.Constants.EDIT_INFO_ROUTE_ID:
+            return (<EditInfo navigator={navigator}/>);
         default:
     }
   }
