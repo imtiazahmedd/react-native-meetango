@@ -27,7 +27,6 @@ class Footer extends Component
   }
 
   render(){
-    console.log(this.props, "propsssssssssssssss")
     if(this.props.isHide){
       return(<View></View>);
     }

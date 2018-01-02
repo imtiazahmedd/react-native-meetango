@@ -35,7 +35,7 @@ class EventSettingsPageScreen extends Component {
                     <View style={{height: height*0.09, width: width, flexDirection: 'row', justifyContent: 'space-between'}}>
                         <View style={{width: width*0.15, height: height*0.09}}>
                             <TouchableOpacity onPress={this.props.onPop} underlayColor={'transparent'} style={{width: width*0.15, justifyContent: 'center'}}>
-                                <Image source={require('../../images/ic_arrow_left.png')} resizeMode={'contain'} style={{width: width*0.10, height: 40, marginTop: 8, marginLeft: 5, justifyContent: 'center'}}/>
+                                <Image source={require('../../images/ic_arrow_left.png')} resizeMode={'contain'} style={{width: width*0.10, height: 30, marginTop: 14, marginLeft: 5, justifyContent: 'center'}}/>
                             </TouchableOpacity>
                         </View>
                         <View style={{width: Global.Constants.WIDTH_SCREEN - 110 , height: height*0.09, alignSelf: 'center', marginTop: height*0.01, justifyContent: 'center'}}>
@@ -57,7 +57,7 @@ class EventSettingsPageScreen extends Component {
                 scrollEnabled={true}
                 onScroll={this.onScrollView.bind(this)}>
                     <View style={{flex: 1, flexDirection: 'column' }}>
-                        <View style={{width: width, height: height*0.1, borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.1, borderBottomColor: "#E4E0E0", borderWidth: 1, backgroundColor: '#FFFFFF', borderTopColor: '#E4E0E0'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.7, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Gender</Text>
@@ -72,7 +72,7 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Age Range</Text>
@@ -82,7 +82,7 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.05}}>
+                        <View style={{width: width, height: height*0.05, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1,marginTop: height*0.01, marginLeft: width*0.06, justifyContent: 'center', allignItem: "center"}}>
                                     <MultiSlider
@@ -97,8 +97,8 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1, backgroundColor: "lightblue", borderBottomColor: "grey", borderWidth: 1}} />
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#F8F8F8', borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: '#E4E0E0'}} />
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Show me or not in events</Text>
@@ -108,10 +108,10 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1, backgroundColor: "lightblue", borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: "#F8F8F8", borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: '#E4E0E0'}}>
                             <Text style={{fontSize: 20, color: "grey", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>NOTIFICATIONS</Text>
                         </View>
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>New Matches</Text>
@@ -121,7 +121,7 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1, borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.1, borderBottomColor: "#E4E0E0", borderWidth: 1, backgroundColor: '#FFFFFF', borderTopColor: '#E4E0E0'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Messages</Text>
@@ -131,7 +131,7 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 18, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>New events of Venues i follow</Text>
@@ -141,7 +141,7 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1, borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.1, borderBottomColor: "#E4E0E0", borderWidth: 1, backgroundColor: '#FFFFFF', borderTopColor: '#E4E0E0'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Vibration</Text>
@@ -151,7 +151,7 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Sound</Text>
@@ -161,55 +161,61 @@ class EventSettingsPageScreen extends Component {
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1, backgroundColor: "lightblue", borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: "#F8F8F8", borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: '#E4E0E0'}}>
                             <Text style={{fontSize: 20, color: "grey", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>CONTACT US</Text>
                         </View>
-                        <View style={{width: width, height: height*0.06, backgroundColor: "lightblue"}} />
-                        <View style={{width: width, height: height*0.1, borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.06, backgroundColor: "#F8F8F8"}} />
+                        <View style={{width: width, height: height*0.1, borderBottomColor: "#E4E0E0", borderWidth: 1, backgroundColor: '#FFFFFF', borderTopColor: '#E4E0E0'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Help and talk to us</Text>
                                 </View>
                                 <View style={{width: width*0.2, height: height*0.1}}>
-                                    <Image source={require('../../images/image1.png')} resizeMode={'contain'} style={{width: 25, height: 25, marginLeft: width*0.06, marginTop: height*0.035}}/>
+                                    <TouchableOpacity onPress={this.props.onPop} underlayColor={'transparent'} style={{width: width*0.15, justifyContent: 'center'}}>
+                                        <Image source={require('../../images/image1.png')} resizeMode={'contain'} style={{width: 25, height: 25, marginLeft: width*0.06, marginTop: height*0.035}}/>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1, backgroundColor: "lightblue"}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: "#F8F8F8"}}>
                             <Text style={{fontSize: 20, color: "grey", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>LEGAL</Text>
                         </View>
-                        <View style={{width: width, height: height*0.1, borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.1, borderBottomColor: "#E4E0E0", borderWidth: 1, backgroundColor: '#FFFFFF', borderTopColor: '#E4E0E0'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Privacy Policy</Text>
                                 </View>
                                 <View style={{width: width*0.2, height: height*0.1}}>
-                                    <Image source={require('../../images/image1.png')} resizeMode={'contain'} style={{width: 25, height: 25, marginLeft: width*0.06, marginTop: height*0.035}}/>
+                                    <TouchableOpacity onPress={this.props.onPop} underlayColor={'transparent'} style={{width: width*0.15, justifyContent: 'center'}}>
+                                        <Image source={require('../../images/image1.png')} resizeMode={'contain'} style={{width: 25, height: 25, marginLeft: width*0.06, marginTop: height*0.035}}/>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <View style={{flex: 1, flexDirection: 'row'}}>
                                 <View style={{width: width*0.8, height: height*0.1}}>
                                     <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.05, marginTop: height*0.03}}>Terms of Service</Text>
                                 </View>
                                 <View style={{width: width*0.2, height: height*0.1}}>
+                                    <TouchableOpacity onPress={this.props.onPop} underlayColor={'transparent'} style={{width: width*0.15, justifyContent: 'center'}}>
                                     <Image source={require('../../images/image1.png')} resizeMode={'contain'} style={{width: 25, height: 25, marginLeft: width*0.06, marginTop: height*0.035}}/>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
-                        <View style={{width: width, height: height*0.06, backgroundColor: "lightblue", borderBottomColor: "grey", borderWidth: 1}} />
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.06, backgroundColor: "#F8F8F8", borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: '#E4E0E0'}} />
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.4, marginTop: height*0.03}}>Logout</Text>
                         </View>
-                        <View style={{width: width, height: height*0.15, backgroundColor: "lightblue", borderBottomColor: "grey", borderWidth: 1}}>
+                        <View style={{width: width, height: height*0.15, backgroundColor: "#F8F8F8", borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: '#E4E0E0'}}>
                             <Image source={require('../../images/img_logo.png')} resizeMode={'contain'} style={{width: width*0.4, height: height*0.1, marginLeft: width*0.3}}/>
                             <Text style={{fontSize: 20, color: "grey", fontWeight: "bold", marginLeft: width*0.33}}>Version 1.1.0</Text>
                         </View>
-                        <View style={{width: width, height: height*0.1}}>
+                        <View style={{width: width, height: height*0.1, backgroundColor: '#FFFFFF'}}>
                             <Text style={{fontSize: 20, color: "black", fontWeight: "bold", marginLeft: width*0.3, marginTop: height*0.03}}>Delete  Account</Text>
                         </View>
-                        <View style={{width: width, height: height*0.15, backgroundColor: "lightblue", borderBottomColor: "grey", borderWidth: 1}} />
+                        <View style={{width: width, height: height*0.15, backgroundColor: "#F8F8F8", borderBottomColor: "#E4E0E0", borderWidth: 1, borderTopColor: '#E4E0E0'}} />
                     </View>
             </ScrollView>
         )
