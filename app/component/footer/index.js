@@ -35,7 +35,7 @@ class Footer extends Component
           <TouchableOpacity onPress={this.props.onEvent} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
             <Image source={require('../../images/ic_event.png')} resizeMode={'contain'} style={{width: 35, height: 35}}/>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.props.onMatch} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
+          <TouchableOpacity onPress={this.props.onVenue} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
             <Image source={require('../../images/ic_venue.png')} resizeMode={'contain'} style={{width: 35, height: 35}}/>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.props.onChat} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>

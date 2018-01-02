@@ -73,7 +73,7 @@ class MainView extends Component {
         if(this.state.isHideHeader || this.state.isHideFooter){
           heightContent = Global.Constants.HEIGHT_SCREEN - 53;
         } else {
-          heightContent = Global.Constants.HEIGHT_SCREEN - 103;
+          heightContent = Global.Constants.HEIGHT_SCREEN - 120;
         }
       }
       return (
@@ -85,11 +85,11 @@ class MainView extends Component {
                 showsVerticalScrollIndicator={false}
                 scrollEnabled={!this.state.scrollDisable}
                 onScroll={this.onScrollView.bind(this)}>
-                <TouchableOpacity acstiveOpacity={1} onPress={this.onCloseModalDropdown.bind(this)} style={[this.state.isDropdown && {width: Global.Constants.WIDTH_SCREEN, height: Global.Constants.HEIGHT_SCREEN}]}>
+                <View acstiveOpacity={1} onPress={this.onCloseModalDropdown.bind(this)} style={[this.state.isDropdown && {width: Global.Constants.WIDTH_SCREEN, height: Global.Constants.HEIGHT_SCREEN}]}>
                   <View onLayout={() => { }} style={{}}>
                     {this.renderContent()}
                   </View>
-                </TouchableOpacity>
+                </View>
               </ScrollView>
             </View>
             {!this.state.isHideFooter && this.renderFooter()}
@@ -110,7 +110,11 @@ class MainView extends Component {
       id: Global.Constants.HOME_ROUTE_ID
     });
   }
-  onMatch(){}
+  onMatch(){
+      this.props.navigator.replace({
+          id: Global.Constants.MATCH_PAGE_MAIN_ROUTE_ID
+      });
+  }
   onChat(){
     this.props.navigator.replace({
       id: Global.Constants.CHAT_MAIN_ROUTE_ID
@@ -121,7 +125,11 @@ class MainView extends Component {
           id: Global.Constants.EVENT_PAGE_ROUTE_ID
       });
   }
-  onVenue(){}
+  onVenue(){
+      this.props.navigator.replace({
+          id: Global.Constants.LOCATION_ROUTE_ID
+      });
+  }
   onProfile(){}
   onCloseModalDropdown(){}
 }
