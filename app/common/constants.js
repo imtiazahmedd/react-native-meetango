@@ -28,5 +28,6 @@ exports.EVENT_PAGE_ROUTE_ID = 8;
 exports.MAP_PAGE_ROUTE_ID = 9;
 exports.EVENT_SETTING_ROUTE_ID = 10;
 exports.LOCATION_ROUTE_ID = 12;
+exports.EDIT_INFO_ROUTE_ID = 11;
 
 exports.TIMER_FLASHSCREEN = 200;

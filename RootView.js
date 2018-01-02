@@ -79,6 +79,8 @@ class RootView extends Component {
             return (<EventSettingsPageScreen navigator={navigator}/>);
         case Global.Constants.LOCATION_ROUTE_ID:
             return (<LocationPageMainScreen navigator={navigator}/>);
+        case Global.Constants.EDIT_INFO_ROUTE_ID:
+            return (<EditInfo navigator={navigator}/>);
         default:
     }
   }
