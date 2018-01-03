@@ -28,6 +28,7 @@ var PageChatScreen = require('./app/views/main/chat/chat_page');
 var MatchPageMainScreen = require('./app/views/main/match_page/main');
 var EventPageMainScreen = require('./app/views/bottom/event');
 var LocationPageMainScreen = require('./app/views/bottom/location');
+var UpdateProfileMainScreen = require('./app/views/bottom/updateProfile');
 var MapPageScreen = require('./app/views/events/map');
 var EventSettingsPageScreen= require('./app/views/events/eventsettings');
 
@@ -81,15 +82,11 @@ class RootView extends Component {
             return (<LocationPageMainScreen navigator={navigator}/>);
         case Global.Constants.EDIT_INFO_ROUTE_ID:
             return (<EditInfo navigator={navigator}/>);
+        case Global.Constants.UPDATE_PROFILE_ROUTE_ID:
+            return (<UpdateProfileMainScreen navigator={navigator}/>);
         default:
     }
   }
 }
 
 module.exports=RootView;
-
-//<View style={{flex: 1, flexDirection: 'row'}}>
-//    <View style={{width: 250, height: 150, backgroundColor: 'powderblue'}} />
-//    <View style={{width: 800, height: 150, backgroundColor: 'skyblue'}} />
-//    <View style={{width: 250, height: 150, backgroundColor: 'steelblue'}} />
-//</View>

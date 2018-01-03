@@ -22,7 +22,7 @@ class Footer extends Component
   propTypes:{
     onEvent: React.PropTypes.func,
     onVenue: React.PropTypes.func,
-    onProfile: React.PropTypes.func,
+    onUpdateProfile: React.PropTypes.func,
     isHide: React.PropTypes.bool
   }
 
@@ -38,7 +38,7 @@ class Footer extends Component
           <TouchableOpacity onPress={this.props.onVenue} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
             <Image source={require('../../images/ic_venue.png')} resizeMode={'contain'} style={{width: 35, height: 35}}/>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.props.onChat} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
+          <TouchableOpacity onPress={this.props.onUpdateProfile} underlayColor={'transparent'} style={{width: 70, justifyContent: 'center'}}>
             <Image source={require('../../images/ic_profile.png')} resizeMode={'contain'} style={{width: 35, height: 35}}/>
           </TouchableOpacity>
       </View>

@@ -57,7 +57,7 @@ class MainView extends Component {
             isHide={false}
             onEvent={this.onEvent.bind(this)}
             onVenue={this.onVenue.bind(this)}
-            onProfile={this.onProfile.bind(this)}
+            onUpdateProfile={this.onUpdateProfile.bind(this)}
             availableIndex={this.state.availableIndex}
         />
     );
@@ -130,8 +130,15 @@ class MainView extends Component {
           id: Global.Constants.LOCATION_ROUTE_ID
       });
   }
-  onProfile(){}
-  onCloseModalDropdown(){}
+  onUpdateProfile(){
+      console.log('adfadsf');
+      this.props.navigator.replace({
+          id: Global.Constants.UPDATE_PROFILE_ROUTE_ID
+      });
+  }
+  onCloseModalDropdown(){
+      console.log('adf')
+  }
 }
 
 module.exports = MainView;
