@@ -67,7 +67,7 @@ class UpdateProfileMainScreen extends Base
                                 <View style={{width: width*0.49}}>
                                     <View style={{height: height*0.25,alignItems:'center',justifyContent:'center'}}>
                                         <TouchableOpacity>
-                                            <View style={{height:height*0.1,width:height*0.1,margin:10}}>
+                                            <View style={{height:height*0.12,width:height*0.12,margin:10}}>
                                                 <Image
                                                     source={require('../../images/setting.png')}
                                                     style={{height:height*0.1,width:height*0.1,borderRadius:100}}>
@@ -85,10 +85,10 @@ class UpdateProfileMainScreen extends Base
                                 <View style={{width: width*0.49}}>
                                     <View style={{height: height*0.25,alignItems:'center',justifyContent:'center'}}>
                                         <TouchableOpacity>
-                                            <View style={{height:height*0.1,width:height*0.1,margin:10}}>
+                                            <View style={{height:height*0.12,width:height*0.12,margin:10,borderRadius:100}}>
                                                 <Image
                                                     source={require('../../images/edit.png')}
-                                                    style={{height:height*0.1,width:height*0.1,borderRadius:100}}>
+                                                    style={{height:height*0.09,width:height*0.09,marginTop:10,marginLeft:10}}>
                                                 </Image>
                                             </View>
                                         </TouchableOpacity>

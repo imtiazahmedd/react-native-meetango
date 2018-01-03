@@ -45,17 +45,17 @@ class MatchPageMainScreen extends Base
   renderMainPage(){
     return(
         <View style={{flex: 1,flexDirection: 'column'}}>
-            <View>
+            <View style={{height:height*0.58}}>
                 <Image
                     source={require('../../../images/img_1.png')}
-                    style={{width:width*1,height : height*0.45,marginTop: 10, borderRadius: 20}}>
+                    style={{width:width*1,height : width*1}}>
                     <View style={{marginLeft: 25, flexDirection: 'column', bottom: 20, position: 'absolute'}}>
                         <Text style={{color: 'white', fontWeight: 'bold', fontSize: 25}}>{'John Kevin'}</Text>
                         <Text style={{color: 'white', fontWeight: 'bold', fontSize: 20}}>{'20 ago'}</Text>
                         <Text style={{color: 'white', fontWeight: 'bold', fontSize: 11}}>{'Software Engineer'}</Text>
                         <Text style={{color: 'white', fontWeight: 'bold', fontSize: 11}}>{'Ho Chi Minh City, Vietnam'}</Text>
                     </View>
-                    <TouchableOpacity style={{marginTop: Global.Constants.HEIGHT_SCREEN/2 - 100, marginRight: 10, flexDirection: 'row', justifyContent: 'flex-end'}}>
+                    <TouchableOpacity style={{marginTop: Global.Constants.HEIGHT_SCREEN/2 - 30, marginRight: 10, flexDirection: 'row', justifyContent: 'flex-end'}}>
                         <Image
                             source={require('../../../images/ic_info.png')}
                             style={{width: 80, height: 80}}>
