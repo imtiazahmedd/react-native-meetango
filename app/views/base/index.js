@@ -137,7 +137,7 @@ class MainView extends Component {
       });
   }
   onCloseModalDropdown(){
-      console.log('adf')
+
   }
 }
 
